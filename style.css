@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(
+      127deg,
+      rgba(25, 164, 173, 0.842),
+      rgba(0, 255, 0, 0) 70.71%
+    ),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+.container {
+  width: 60%;
+  min-height: 70vh;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(1rem);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr 0.5fr 2fr;
+  grid-gap: 2rem;
+  padding: 2rem;
+}
+
+.fa-play-circle {
+  grid-column: 1/4;
+  align-self: flex-end;
+  justify-self: center;
+  cursor: pointer;
+  color: rgb(251, 251, 251);
+}
+
+.status {
+  grid-column: 1/4;
+  align-self: flex-start;
+  justify-self: center;
+  font-size: 4rem;
+  color: rgb(248, 248, 248);
+  margin-top: -1rem;
+}
+
+.status h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.items {
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.items h4 {
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  width: 35%;
+  padding: 0.5rem 0;
+  text-align: center;
+  display: none;
+}
+
+.items:hover {
+  opacity: 1;
+}
+
+.item1 {
+  background-image: url(./images/forest.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+}
+
+.item2 {
+  background-image: url(./images/fire.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+}
+
+.item3 {
+  background-image: url(./images/river.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+}
